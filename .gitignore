@@ -3,10 +3,9 @@ CMakeCache.txt
 CMakeFiles
 *~
 *.a
-HelloConfig.h
+KataConfig.h
 Makefile
 cmake_install.cmake
-Hello
 *Test
 Testing
 */Testing
