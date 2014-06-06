@@ -4,11 +4,11 @@ project (CppHello)
 ENABLE_TESTING()
 
 # The version number.
-set (HELLO_VERSION_MAJOR 1)
-set (HELLO_VERSION_MINOR 0)
+set (KATA_VERSION_MAJOR 1)
+set (KATA_VERSION_MINOR 0)
 
 # Where Google Test's .h files can be found.
-#set(gtest_DIR "/Users/rj/gtest-1.7.0")
+#set(gtest_DIR "<location of gtest library>)
 #include_directories(
 #  ${gtest_DIR}/include
 #  ${gtest_DIR})
@@ -16,15 +16,15 @@ set (HELLO_VERSION_MINOR 0)
 # Greetings
 include_directories(
   "${PROJECT_BINARY_DIR}"
-  "${PROJECT_SOURCE_DIR}/Greetings"
+  "${PROJECT_SOURCE_DIR}/Kata"
 )
-add_subdirectory(Greetings)
+add_subdirectory(Kata)
 
 configure_file (
-  "${PROJECT_SOURCE_DIR}/HelloConfig.h.in"
-  "${PROJECT_BINARY_DIR}/HelloConfig.h"
+  "${PROJECT_SOURCE_DIR}/KataConfig.h.in"
+  "${PROJECT_BINARY_DIR}/KataConfig.h"
 )
 
-add_executable(Hello Hello.cpp)
-target_link_libraries (Hello Greetings)
+add_executable(KataCpp KataVersion.cpp)
+target_link_libraries (KataCpp Kata)
 
