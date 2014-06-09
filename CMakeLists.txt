@@ -25,6 +25,6 @@ configure_file (
   "${PROJECT_BINARY_DIR}/KataConfig.h"
 )
 
-add_executable(KataCpp KataVersion.cpp)
+add_executable(KataCpp KataMain.cpp)
 target_link_libraries (KataCpp Kata)
 
