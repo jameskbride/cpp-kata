@@ -2,5 +2,5 @@
 
 bool Kata::truth()
 {
-  return true;
+  return false;
 }
